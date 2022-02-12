@@ -26,15 +26,15 @@ A csv file with election results was provided for this analysis. The purpose of 
 
 This script can be used to calculate the results for any election as long as the election results’ csv dataset is organized and located in the same way/place as in this analysis and the election_analysis.txt file is not moved. More specifically:
 
-## The csv file
+## The .csv file
 
 Format: the second column shows the county, the third column shows the candidate, and the file’s first row includes the headers.
 
-The csv file is named election_results.csv and is located inside the “Resources” folder (which should be on the same level as the “PyPoll_challenge.py” file).
+The csv file is named election_results.csv and is located inside the “Resources” folder (which should be on the same level as the “PyPoll_Challenge.py” file).
 
 ## The election_analysis.txt file
 
-The file should be located inside the “analysis” folder, which should be on the same level as the “PyPoll_challenge.py” file
+The file should be located inside the “analysis” folder, which should be on the same level as the “PyPoll_Challenge.py” file
 
 ## Script updates that may be needed to calculate other election results
 
@@ -44,8 +44,16 @@ The file should be located inside the “analysis” folder, which should be on 
 
 - If the column where the candidate’s name is shown in the raw data is modified, then line 51 of the PyPoll_Challenge.py should be updated to reflect the new index where the name is shown (which would be column number less 1).
 
+`candidate_name = row[2]`
+
 - If the column where the county is shown in the raw data is modified, then line 54 of the PyPoll_Challenge.py should be updated to reflect the new index where the county is shown (which would be column number less 1).
+
+`county = row[1]`
 
 - If the headers are removed from the csv file, then row 42 of the PyPoll_Challenge should be removed.
 
-- If the name or location of the election_analysis.txt file is modified, then line 11 of the PyPoll_Challenge.py should be updated to reflect the updated name.
+`header = next(reader)`
+
+- If the name or location of the election_analysis.txt file is modified, then line 12 of the PyPoll_Challenge.py should be updated to reflect the updated name.
+
+`file_to_save = os.path.join("analysis", "election_analysis.txt")`
