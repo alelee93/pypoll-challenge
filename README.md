@@ -40,6 +40,8 @@ The file should be located inside the “analysis” folder, which should be on 
 
 - If the name or location of the csv file is modified, then line 10 of the PyPoll_Challenge.py should be updated to reflect the updated name and location.
 
+`file_to_load = os.path.join("Resources", "election_results.csv")`
+
 - If the column where the candidate’s name is shown in the raw data is modified, then line 51 of the PyPoll_Challenge.py should be updated to reflect the new index where the name is shown (which would be column number less 1).
 
 - If the column where the county is shown in the raw data is modified, then line 54 of the PyPoll_Challenge.py should be updated to reflect the new index where the county is shown (which would be column number less 1).
