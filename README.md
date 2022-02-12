@@ -20,7 +20,7 @@ A csv file with election results was provided for this analysis. The purpose of 
   - Winning Vote Count: 272,892
   - Winning Percentage: 73.8%
 
-  ![picture alt](images/election_results.png "Election Results")
+  <img src="images/election_results.png" width="100">
 
 # Election-Audit Summary
 
