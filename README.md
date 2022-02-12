@@ -16,8 +16,11 @@ A csv file with election results was provided for this analysis. The purpose of 
   - Diana DeGette: 73.8% (272,892)
   - Raymon Anthony Doane: 3.1% (11,606)
 - Diana DeGette won the election, with the following metrics:
+
   - Winning Vote Count: 272,892
   - Winning Percentage: 73.8%
+
+  ![picture alt](images/election_results.png "Election Results")
 
 # Election-Audit Summary
 
